@@ -25,3 +25,16 @@ This ZIP is a complete project source layout. Back up your existing repository f
 - Lyrics synchronization, online metadata providers, Android Auto browse customisation, playlist editing/export, crossfade, gapless transition tuning, audio replay gain and home-screen widgets are not implemented in this baseline.
 - Android audio effects depend on device and OEM support. Some devices expose fewer EQ bands or disable effects.
 - This source package has not been compiled on the user's device or repository. Run the included GitHub Actions workflow and address any build log errors before installing.
+
+
+## UI and library update
+- Silver/black visual system with translucent glass-style panels and borders.
+- Tapping a track starts playback and opens the full-screen Now Playing view.
+- Tapping the mini-player opens Now Playing.
+- Local album art is loaded from Android MediaStore album-art URIs.
+- Albums are grouped by album name and shown as artwork cards; selecting one opens its track list.
+- Artists and folders have separate browsing views.
+- Added a custom silver X launcher icon.
+- Added Coil Compose for artwork loading.
+
+Note: Android only provides album artwork when it is embedded in the audio file or indexed by the device media provider. Tracks without embedded/indexed artwork will show an empty dark artwork tile. Online artwork lookup, synced lyrics, playlist editor, and a fully connected system equalizer are not included in this update.
